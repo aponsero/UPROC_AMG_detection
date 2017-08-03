@@ -4,9 +4,7 @@ Pipeline for detection of potential AMG in assembled metagenome using UPROC
 ## Requirements
 
 ### UPROC databases
-This pipeline necessites to download a Uproc database and working model. Several databases are available in the `UProC homepage`_ and Uproc provide a pipeline to create custom databases. 
-
-.. _`UProC homepage`: http://uproc.gobics.de
+This pipeline necessites to download a Uproc database and working model. Several databases are available in the [Uproc homepage](http://uproc.gobics.de)  and Uproc provide a pipeline to create custom databases. 
 
 ### UPROC
 Uproc (at least version 1.2.0) should be previously installed and included in the user PATH. Uproc is available at https://github.com/gobics/uproc.
@@ -25,7 +23,7 @@ please modify the
   - SAMPLE_DIR = indicate here the output directory
   - DB_DIR = indicate here the Uproc database directory
   - MODEL = indicate here the Uproc model directory
-  -PFAM_VIR = provide a list of known viral pfam id
+  - PFAM_VIR = provide a list of known viral pfam id
   - MAIL_USER = indicate here your arizona.edu email
   - GROUP = indicate here your group affiliation
 
@@ -38,15 +36,20 @@ You can also modify
   
   ### Split input file
   
-  Run ./split.sh
-  
+  Run 
+  ```bash
+  ./split.sh
+  ```
   This command will remove short contigs from the dataset (<500pb) and split the remaining contigs in manageable files for the analysis (10.000 contigs/files). The split files are stored in $SAMPLE_DIR/div/raw.
   
   Once the job is completed successfully, the analysis can be run.
   
   ### Run analysis
   
-  Run ./submit.sh
+  Run 
+  ```bash
+  ./submit.sh
+  ```
   
   Will place in queue two successive jobs for the analysis.
   The final output is located in $SAMPLE_DIR/results_AMG.log
