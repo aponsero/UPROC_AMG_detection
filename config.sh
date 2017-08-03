@@ -3,8 +3,8 @@ export CWD=$PWD
 export BIN_DIR="/rsgrps/bhurwitz/hurwitzlab/bin"
 export PRODIGAL="/rsgrps/bhurwitz/alise/tools/Prodigal/prodigal"
 # where the sample to analyze are
-export SAMPLE="/rsgrps/bhurwitz/alise/my_data/TOV_assemblies/CENF01.fasta"
-export SAMPLE_DIR="/rsgrps/bhurwitz/alise/my_data/BLAST_results/pipeline_AMG_testGIT"
+export SAMPLE="YOUR/FILE"
+export SAMPLE_DIR="YOUR/PATH"
 # scripts of the pipeline
 export SCRIPT_DIR="$PWD/scripts"
 export WORKER_DIR="$SCRIPT_DIR/workers"
@@ -14,8 +14,8 @@ export MODEL="/rsgrps/bhurwitz/alise/my_data/databases/Uproc_DB/model"
 export PFAM_VIR="/rsgrps/bhurwitz/alise/my_data/databases/Uproc_DB/Vir_PFAM.txt"
 #user informations
 export QUEUE="standard"
-export GROUP="bhurwitz"
-export MAIL_USER="aponsero@email.arizona.edu"
+export GROUP="yourgroup"
+export MAIL_USER="yourmail@email.arizona.edu"
 export MAIL_TYPE="bea"
 
 
