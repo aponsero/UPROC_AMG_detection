@@ -67,7 +67,7 @@ $RUN
 #
 # recover potential AMGs
 #
-export OUT4="UPROC_DIR/AMGs_$CFILE.txt"
+export OUT4="$UPROC_DIR/AMGs_$CFILE.txt"
 
 export RUN="$WORKER_DIR/get_hits_uproc.pl"
 echo "$RUN $OUT3 $OUT4 $PFAM_VIR"
