@@ -19,6 +19,6 @@ echo "Host `hostname`">>"$LOG"
 cd "$SAMPLE_DIR/uproc"
 export OUTPUTFILE="$SAMPLE_DIR/results_AMG.log"
 
-find . -type f -name "results_*" -exec cat {} + >> $OUTPUTFILE 
+find . -type f -name "AMGs_*" -exec cat {} + >> $OUTPUTFILE 
 
 echo "Finished `date`">>"$LOG"
